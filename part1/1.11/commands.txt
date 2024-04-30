@@ -1,0 +1,9 @@
+$ git clone https://github.com/docker-hy/material-applications.git
+$ mv material-applications/spring-example-project/ ./
+$ cd spring-example-project
+$ touch Dockerfile
+
+--- after writing the Dockerfile---
+
+$ docker build . -t spring
+$ docker run -p 8080:8080 spring
